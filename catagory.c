@@ -3,30 +3,30 @@
 #pragma once\
 
 typedef int Elemtype;
-//1 ÏßĞÔ±í
+//1 çº¿æ€§è¡¨
 
-//1.1 Ë³Ğò±í
-//1.1.1 ¾²Ì¬
+//1.1 é¡ºåºè¡¨
+//1.1.1 é™æ€
 #define MAXSIZE 100
 typedef struct {
 	Elemtype data[MAXSIZE];
 	int length;
 }Sqlist;
-//1.1.2 ¶¯Ì¬
+//1.1.2 åŠ¨æ€
 typedef struct{
 	Elemtype *data;
 	int MaxSize,length;
 }Seqlist;
 
-//1.2Á´±í
-//1.2.1µ¥Ïò
+//1.2é“¾è¡¨
+//1.2.1å•å‘
 typedef struct LinkNode {
 	Elemtype data;
 	struct LinkNode* next;
 
  }LinkNode, *LinkList;
 
-//1.2.2Ë«Ïò
+//1.2.2åŒå‘
 typedef struct LNode {
 	Elemtype data;
 	struct LNode *rear,*next;
